@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f592a921-7d83-4940-8158-a79fd03695f6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+    *
+FROM
+      table1]]>
+	</queryString>
+	<field name="PID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HallPayment" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RoomPayment" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OrderPayment" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AdPayment" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NetTotal" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Discount" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPayment" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="81" y="0" width="410" height="48" uuid="3092a68d-41a8-4e4b-aaac-17c2fa10404a"/>
+				<textElement textAlignment="Center">
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRAVELODGE HOTEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="48" width="275" height="31" uuid="864ef78b-cbfe-48d0-8c48-a49a41266b9f"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monthly Income Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="26" height="19" forecolor="#000066" uuid="7ceac54c-6eaa-47f4-9ab4-e261fd0f7a93"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="0" width="55" height="31" forecolor="#000066" uuid="e83a8519-b080-4b11-9476-5d7bc2ce270d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hall payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="0" width="56" height="31" forecolor="#000066" uuid="25f90a6e-9ecb-469d-aa38-a80b99225277"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="0" width="71" height="44" forecolor="#000066" uuid="84f04438-6943-4658-b613-99314c4fedba"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Additional Service Payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="72" height="20" forecolor="#000066" uuid="c825401a-5ee9-4848-9ffe-26cbe595806f"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="61" height="19" forecolor="#000066" uuid="2e3a7f9e-559b-4877-9df5-9bfd51816a8d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="0" width="51" height="31" forecolor="#000066" uuid="0bf25c1c-d80e-4537-86fb-f072437f91b3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="0" width="49" height="20" forecolor="#000066" uuid="72a125f2-17a8-48a6-a64b-91e355a603a2"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="0" width="64" height="31" forecolor="#000066" uuid="1bda28c9-30b9-4972-824d-e0199828785b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Payment]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="7" width="26" height="20" uuid="44648289-b24a-4f2b-bc3b-1fbfe5f60ddd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="7" width="49" height="20" uuid="74d3c4bf-ae19-43fb-b66c-e9acb0cf3f86"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="7" width="55" height="20" uuid="9aa7c004-1584-4069-9e64-a0b2a086158c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HallPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="7" width="59" height="20" uuid="36eeb8d5-0db5-44c3-a613-742a432deb19"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RoomPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="7" width="64" height="20" uuid="3f1fe0cc-39a9-445f-8aae-a51c23d83692"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OrderPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="7" width="73" height="20" uuid="71d70b27-2aca-484c-8b5a-de167d529da4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AdPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="7" width="72" height="20" uuid="4691872b-125c-4c1f-8daf-d6a7d747ffc0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NetTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="7" width="61" height="20" uuid="22750c02-facb-41ec-a60c-c14671f39686"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="7" width="51" height="20" uuid="d1426478-6fe0-45ef-933d-664c2a4ad8f0"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TotalPayment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
